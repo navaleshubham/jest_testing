@@ -13,11 +13,13 @@ app.use(bodyParser.json());
 app.use(cors());
 mongo.connectDatabase()
 let refreshtokens = [];
-
-app.use('/User',require('./routes/User'))
-app.use('/Post',require('./routes/Post'))
+var User=require('./routes/User')
+var Post=require('./routes/Post')
+app.use('/User',User)
+app.use('/Post',Post)
 
 const port = process.env.PORT || 4000;
 const server = app.listen(port, function () {
   console.log('Listening on port ' + port);
 });
+
