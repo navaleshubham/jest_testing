@@ -77,6 +77,7 @@ router.delete('/Delete/:id',(req,res)=>{
             return res.send('comment not found')
         }
         else{
+            console.log(result)
             return res.send(true)
         }
     })
