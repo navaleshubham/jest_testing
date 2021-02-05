@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "nodemon ./index.js",
-    "test": "NODE_ENV=test jest --testPathPattern='./tests/.*\\.test\\.js$' --detectOpenHandles --runInBand --forceExit"
+    "test": "NODE_ENV=test jest --testPathPattern='./tests/.*\\.test\\.js$' --detectOpenHandles --runInBand --forceExit --coverage"
   },
   "jest": {
     "verbose": true,
